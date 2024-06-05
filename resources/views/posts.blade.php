@@ -8,10 +8,12 @@
             <h2 class="mb-1 text-3xl tracking-tight font-bold text-gray-900">{{ $post['title'] }}</h2>
         </a>
         <div class="text-base text-gray-500">
-            <a href="#">{{ $post['author'] }}</a> | 27 Mei 2024
+            <a href="#">{{ $post['author'] }}</a> | {{ $post->created_at->diffForHumans() }}
         </div>
         <p class="my-4 font-light">{{ Str::limit($post['body'], 100) }}</p>
         <a href="/posts/{{ $post['slug'] }}" class="font-medium text-blue-500 hover:underline">Read more &raquo;</a>
     </article>
 @endforeach
 </x-layout>
+
+App\Models\Post::create(['title' => 'MU Juara Piala FA', 'author' => 'Luth Badila', 'slug' => 'mu-juara-piala-fa', 'body' => 'MU Juara Piala FA setelah mengalahkan rival sekotanya yaitu Manchester CIty dalam pertandingan derby di final piala fa.']);
