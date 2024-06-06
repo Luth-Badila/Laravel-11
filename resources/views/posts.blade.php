@@ -15,5 +15,3 @@
     </article>
 @endforeach
 </x-layout>
-
-App\Models\Post::create(['title' => 'MU Juara Piala FA', 'author' => 'Luth Badila', 'slug' => 'mu-juara-piala-fa', 'body' => 'MU Juara Piala FA setelah mengalahkan rival sekotanya yaitu Manchester CIty dalam pertandingan derby di final piala fa.']);
