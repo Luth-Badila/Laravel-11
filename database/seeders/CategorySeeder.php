@@ -15,32 +15,38 @@ class CategorySeeder extends Seeder
     {
         Category::create([
             'name' => 'Web Design',
-            'slug' => 'web-design'
+            'slug' => 'web-design',
+            'color' => "green"
         ]);
 
         Category::create([
             'name' => 'Web Development',
-            'slug' => 'web-development'
+            'slug' => 'web-development',
+            'color' => "blue"
         ]);
 
         Category::create([
             'name' => 'AI',
-            'slug' => 'ai'
+            'slug' => 'ai',
+            'color' => "lime"
         ]);
 
         Category::create([
             'name' => 'Handphone',
-            'slug' => 'handphone'
+            'slug' => 'handphone',
+            'color' => "red"
         ]);
 
         Category::create([
             'name' => 'PC',
-            'slug' => 'pc'
+            'slug' => 'pc',
+            'color' => "yellow"
         ]);
 
         Category::create([
             'name' => 'TWS',
-            'slug' => 'tws'
+            'slug' => 'tws',
+            'color' => "gray"
         ]);
         // Category::factory(5)->create();
     }
